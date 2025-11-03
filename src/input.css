@@ -2,7 +2,7 @@
 
 /* my custom styles are here */
 .main-cont{
-    @apply pb-4 pl-3 pr-3 mb-10
+    @apply pb-4 pl-3 pr-3 mb-6
 }
 
 .menu-item{

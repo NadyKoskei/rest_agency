@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Fictional Resturant</title>
   </head>
-  <body class="h-full bg-neutral-100">
+  <body class="h-full bg-neutral-100 box-border">
     <header
-      class="flex justify-between items-center fixed bg-neutral-100 top-0 w-full px-2 mb-10"
+      class="flex justify-between items-center fixed bg-neutral-100 top-0 w-full shadow-2xl"
     >
-      <nav class="container mx-auto flex justify-between items-center w-full">
-        <p class="font-bold text-2xl">NOIR-VI SULWE</p>
+      <nav class="container flex justify-between items-center w-full pt-2">
+        <p class="font-bold">NOIR-VI SULWE</p>
 
-        <ul class="flex gap-2">
+        <ul class="flex gap-3">
           <li><a href="#hero-section">Home</a></li>
           <li><a href="#menu-section">Menu</a></li>
           <li><a href="#aboutus-section">About</a></li>
@@ -41,19 +41,17 @@
         background-size: cover;
         object-fit: fill;
       "
-      class="h-110 flex justify-center items-center flex-col text-gray-300"
+      class="h-125 flex justify-center items-center flex-col text-gray-300"
     >
-
-        <h1 class="display-4 fw-bold">Savor Every Moment</h1>
-        <p class="mb-4">
-          Curated flavors, seasonal ingredients, unforgettable dining.
-        </p>
-        <a href="#menu-section" class="btn btn-primary btn-lg">Explore Menu</a>
-      
+      <h1 class="display-4 fw-bold">Taste Every Flavor</h1>
+      <p class="mb-4">
+        cooked with seasonal ingredients for unforgettable dining
+      </p>
+      <a href="#menu-section" class="btn btn-primary btn-lg">Explore Menu</a>
     </div>
     <main class="main-cont">
-      <div id="menu-section" class="h-110 mt-3 mb-3">
-        <p class="text-center font-bold text-2xl">Our Menu</p>
+      <div id="menu-section" class="h-110 mt-3">
+        <p class="text-center font-bold text-2xl mb-0">Our Menu</p>
         <p class="text-center text-gray-700">a taste of the chef's delight</p>
 
         <div id="menu-items" class="grid gap-3 grid-cols-4">
@@ -92,27 +90,32 @@
           </div>
         </div>
       </div>
-      <div id="aboutus-section" class="h-110 mt-18">
-        <p class="text-center font-bold text-2xl">About Us</p>
-        <p class="text-center text-gray-700">gain more insight on who we are</p>
-        <div id="about-cont" class="grid gap-3 grid-cols-2">
+      <div id="aboutus-section" class="h-110 mt-14">
+        <p class="text-center font-bold text-2xl mb-0">About Us</p>
+        <p class="text-center text-gray-700 mb-4">gain more insight on who we are</p>
+        <div id="about-cont" class="grid gap-0 grid-cols-2">
           <div>
-            <img src="assets/images/restusant.jpeg" alt="" class="h-80" />
+            <img src="assets/images/rest.jpg" alt="" class="h-80 p-2" />
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            impedit labore quia? Dolores nostrum, debitis ipsa et rem obcaecati
-            excepturi harum, qui eaque tempora officiis? Minus, dignissimos
-            amet. Distinctio, modi.
+            A celestial celebration of melanin-rich beauty and African cultural
+            pride. Rooted in the elegance of dusk (noir) and the cosmic glow of
+            starlight (sulwe), it honors the sacred ritual of dining as a
+            sensory experience, a gathering of soul and story. Every flavor,
+            every moment, is curated to evoke warmth, belonging, and ancestral
+            grace. From seasonal harvests to poetic plating, noir-vi sulwe
+            invites you to feast in the glow and linger in the legacy—where food
+            is not just nourishment, but a tribute to heritage, hope, and the
+            richness of Black identity.
           </p>
         </div>
       </div>
-      <div id="contactus-section" class="h-90">
-        <p class="text-center font-bold text-2xl">Contact us</p>
+      <div id="contactus-section" class="h-100">
+        <p class="text-center font-bold text-2xl mb-0">Contact us</p>
         <p class="text-center text-gray-700">get in touch with us</p>
         <div class="flex flex-col justify-center items-center">
           <form
-            class="border-2 border-gray-100 bg-white p-4 mt-2 mb-2 w-110 rounded-md shadow-xl"
+            class="border-2 border-gray-100 bg-white p-4 mt-2 w-110 rounded-md shadow-xl"
           >
             <div>
               <label for="fullname">Full Name:</label>
@@ -132,7 +135,12 @@
             </div>
             <div>
               <label for="message">Message:</label>
-              <input type="text" placeholder="let us know" class="form-input" />
+              <textarea
+                class="form-control"
+                rows="4"
+                placeholder="let us know"
+                required
+              ></textarea>
             </div>
             <div>
               <button
@@ -146,8 +154,23 @@
         </div>
       </div>
     </main>
-    <footer class="bg-black text-white text-center p-2 bottom-0 left-0 w-full">
-      <p>&copy; 2025 noir-vi sulwe. All rights reserved nck.</p>
+    <footer
+      class="bg-black text-gray-200 pb-0 pl-3 pr-6 bottom-0 left-0 w-full"
+    >
+      <div class="flex justify-between items-center">
+        <p class="pt-3">&copy; 2025 noir-vi sulwe. All rights reserved nck.</p>
+        <div class="w-110 flex gap-3">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms and Conditions</a>
+          <a href="">Cookie Settings</a>
+        </div>
+        <ul class="flex flex-row mt-2 gap-3 pt-2">
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-tiktok"></i></li>
+          <li><i class="bi bi-whatsapp"></i></li>
+          <li><i class="bi bi-twitter-x"></i></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

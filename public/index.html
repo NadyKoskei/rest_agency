@@ -43,57 +43,68 @@
       "
       class="h-125 flex justify-center items-center flex-col text-gray-300"
     >
-      <h1 class="display-4 fw-bold">Taste Every Flavor</h1>
+      <h1 class="display-4 fw-bold">Food for the Soul</h1>
       <p class="mb-4">
         cooked with seasonal ingredients for unforgettable dining
       </p>
       <a href="#menu-section" class="btn btn-primary btn-lg">Explore Menu</a>
     </div>
-    <main class="main-cont">
-      <div id="menu-section" class="h-110 mt-3">
+    <!--main content-->
+    <main class="main-cont grid gap-3 grid-flow-row auto-rows-auto ">
+      <!--menu section-->
+      <div id="menu-section" class="">
         <p class="text-center font-bold text-2xl mb-0">Our Menu</p>
         <p class="text-center text-gray-700">a taste of the chef's delight</p>
 
-        <div id="menu-items" class="grid gap-3 grid-cols-4">
-          <div class="menu-item flex justify-center">
+        <div id="menu-items" class="grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+          <div class="menu-item">
             <div>
               <img
                 src="assets/images/mealB.jpeg"
                 alt=""
-                class="h-70 object-cover"
+                class="w-full h-auto object-cover"
               />
             </div>
+            <div>
+              <p>dumplings</p>
+              <p>500 ksh</p>
+            </div>
           </div>
-          <div class="menu-item flex justify-center">
+          <div class="menu-item">
             <div>
               <img
                 src="assets/images/mealA.jpeg"
                 alt=""
-                class="h-70 object-cover"
+                class="w-full h-auto object-cover"
               />
             </div>
           </div>
-          <div class="menu-item flex justify-center">
+          <div class="menu-item">
             <div>
               <img
                 src="assets/images/mealB.jpeg"
                 alt=""
-                class="h-70 object-cover"
+                class="w-full h-auto object-cover"
               />
             </div>
           </div>
 
-          <div class="menu-item flex justify-center">
+          <div class="menu-item">
             <div>
-              <img src="assets/images/mealA.jpeg" alt="" class="h-70" />
+              <img src="assets/images/mealA.jpeg" 
+              alt="" 
+              class="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
       </div>
-      <div id="aboutus-section" class="h-110 mt-14">
+      <!--about us section-->
+      <div id="aboutus-section" class="">
         <p class="text-center font-bold text-2xl mb-0">About Us</p>
-        <p class="text-center text-gray-700 mb-4">gain more insight on who we are</p>
-        <div id="about-cont" class="grid gap-0 grid-cols-2">
+        <p class="text-center text-gray-700 mb-4">
+          gain more insight on who we are
+        </p>
+        <div id="about-cont" class="grid grid-cols-2">
           <div>
             <img src="assets/images/rest.jpg" alt="" class="h-80 p-2" />
           </div>
@@ -106,11 +117,12 @@
             grace. From seasonal harvests to poetic plating, noir-vi sulwe
             invites you to feast in the glow and linger in the legacy—where food
             is not just nourishment, but a tribute to heritage, hope, and the
-            richness of Black identity.
+            richness of black identity and african heritage.
           </p>
         </div>
       </div>
-      <div id="contactus-section" class="h-100">
+      <!--contact section-->
+      <div id="contactus-section" class="">
         <p class="text-center font-bold text-2xl mb-0">Contact us</p>
         <p class="text-center text-gray-700">get in touch with us</p>
         <div class="flex flex-col justify-center items-center">
